@@ -81,18 +81,18 @@
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #141E30;
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);
+  background: linear-gradient(to right, #243B55, #141E30);
 }
 
 a {
@@ -104,4 +104,23 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+#titulo {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+#relogio {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  background-image: linear-gradient(to bottom, white, steelblue, turquoise);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
 }
